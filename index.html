@@ -3,19 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Portofolio - Ade Nursito</title>
 
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\styles.css">
 </head>
-<body>
+<body class="bg-yellow-50 text-black-900">
+    
     <!--header-->
-    <header></header>
+    <header>
+
+        <div>
+            <!-- div -->
+            <div class="absolute top-165 left-150 w-100 h-100 bg-blue-300 rounded-full opacity-50 -z-10"></div>
+            <div class="absolute top-10 left-10 w-100 h-100 bg-blue-300 rounded opacity-50 -z-10"></div>
+            <div class="absolute top-510 left-250 w-100 h-100 bg-blue-300 rounded opacity-50 -z-10"></div>
+            <div class="absolute top-359 left-123 w-100 h-100 bg-blue-300 rounded-full opacity-50 -z-10"></div>
+            <div class="absolute top-50 left-300 w-0 h-0 border-l-300 border-r-10 border-b-400 border-l-transparent border-r-transparent border-b-blue-200"></div>           
+            <div class="absolute top-546 left-30 w-0 h-0 border-l-300 border-r-100 border-b-200 border-l-transparent border-r-transparent border-b-blue-200"></div>
+
+            <!-- nav -->
+            <nav class="bg-blue-900 rounded-lg flex justify-between items-center p-5">
+                <img src="foto.jpeg" alt="Foto" class="w-30 h-30 rounded-full mt-2 ml-10" />
+                <ul class="mr-5 flex space-x-4">
+                    <li class="border p-1 rounded-lg text-yellow-50"><a href="#">Home</a></li>
+                    <li class="border p-1 rounded-lg text-yellow-50"><a href="#">About</a></li>
+                    <li class="border p-1 rounded-lg text-yellow-50"><a href="#">Portfolio</a></li>
+                    <li class="border p-1 rounded-lg text-yellow-50"><a href="#">Message Us</a></li>
+                </ul>
+            </nav>
+    </header>
 
     <!--main content-->
-    <main></main>
+    <main>
+        <!-- Add your main content here -->
+         <selection id="home" class="min-h-[100vh] flex flex-col justify-center items-center" >
+            <h1 class="text-4xl mb-4">Welcome <span id="username"></span> to My Portfolio</h1>
+            <p class="text-lg">Hi, I'm Ade Nursito, a passionate developer and designer.</p>
+         </selection>
+
+         <selection id="about" class="min-h-[100vh] flex flex-col justify-center items-center bg-gray-100 w-full" >
+                <h2 class="text-3xl mb-4">About Me</h2>
+                <p class="text-lg max-w-2xl text-center">I am a dedicated professional with a love for creating beautiful and functional web applications. With experience in various technologies, I strive to deliver high-quality work that meets client needs.</p>
+         </selection>
+
+            <selection id="portfolio" class="min-h-[100vh] flex flex-col justify-center items-center" >
+                    <h2 class="text-3xl mb-4">My Portfolio</h2>
+                    <p class="text-lg max-w-2xl text-center">Here are some of my recent projects:</p>
+                        </selection>
+
+         <section id="Massages Me" class="min-h-[100vh] flex flex-col justify-center items-center bg-gray-100 w-full" >
+                <h2 class="text-3xl mb-4">Contact Me</h2>
+                <form class="w-full max-w-lg">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+                        <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button type="button" onclick="validateForm()"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Send Message</button>
+
+    </main>
 
     <!--footer-->
-    <footer></footer>
+    <footer>
+        <p class="text-center p-4 bg-blue-900 text-white">© 2024 Ade Nursito. All rights reserved.</p>
+    </footer>
 
     <!--script-->
     <script src="js\scrip.js"></script>
